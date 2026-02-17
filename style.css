@@ -1,0 +1,158 @@
+body{
+    background: url(images/asadal_stock_17.jpg);
+    background-size: cover;
+    margin: 0px 0px 0px 0px;
+}
+.head{
+    font-family: 'Trebuchet MS', sans-serif;
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+    background: linear-gradient(#b4ffab 0%,   /* Light Green at the top */
+        #27b61a 50%,  /* Slightly darker green at the middle */
+        #2ab407 51%,  /* HARD STOP: Darker green right below the middle */
+        #006c1b 100%);
+        margin: 0px 0px 0px 0px;
+        
+}
+.name{
+    text-shadow: 0px 7px 5px rgba(0, 0, 0, 0.4);
+    cursor: pointer; 
+}
+.bt1{
+    font-weight: bolder;
+    color: white;
+  padding: 14px 10px;
+  border-radius: 20px;
+  background: linear-gradient(#d0ebf5 0%,   /* Bright ice blue at top */
+        #3b9ebd 40%,  /* Standard blue */
+        #05abe0 100%);
+  cursor: pointer;
+  font-family: 'Trebuchet MS', sans-serif;
+   box-shadow: 0px 5px 15px rgba(0,0,0,0.3); 
+}
+.bt1:hover {
+    /* "Scale 1.1" means "Grow to 110% size" */
+    transform: scale(1.1); 
+    
+    /* Let's add an Aero Glow while we're at it */
+    box-shadow: 0px 0px 15px rgba(2, 175, 255, 0.8);
+    cursor: pointer;
+}
+.about{
+    background: linear-gradient(
+        to bottom,
+        rgba(192, 230, 255, 0.6) 0%, 
+        rgba(59, 158, 189, 0.5) 40%, 
+        rgba(5, 118, 224, 0.6) 100%
+    );
+    width: 90%;
+    height: 90%;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    margin: 20px auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+/* This targets the IMAGE inside the .img1 div */
+.img1 img {
+    width: 100%;  /* Force image to match the container's width */
+    height: 100%; /* Force image to match the container's height */
+    object-fit: cover; /* Ensures the image doesn't get squished/stretched */
+    border-radius: 20px; /* Optional: Slight rounding looks nice */
+    
+}
+.img1 {
+    height: 200px;       /* Much better size for a photo */
+    width: 200px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3); /* Drop shadow for 3D depth */
+    border-radius: 20px; /* Rounded corners */
+    margin: 20px 20px;
+   
+}
+@media (max-width: 700px) {
+    
+    .about {
+        /* Instead of Side-by-Side (row), make them stack (column) */
+        flex-direction: column; 
+        
+        /* Add some padding so it doesn't hit the edges */
+        padding: 20px;
+        text-align: center; /* Center the text for mobile */
+    }
+
+    .img1 {
+        /* Make the image a bit smaller on phones if you want */
+        height: 150px;
+        width: 150px;
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+}
+.desctxt{
+     text-shadow: 0px 7px 5px rgba(0, 0, 0, 0.4);
+
+}
+.music-player {
+    /* Position it nicely under your About section */
+    margin: 20px auto;
+    width: 300px;
+    
+    /* The Glassy Container Look */
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    backdrop-filter: blur(10px);
+    
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.song-title {
+    /* The "LCD Screen" Look */
+    background: #12c2ee;
+    color: #00ff00; /* Hacker Green Text */
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    box-shadow: inset 0px 2px 5px rgba(0,0,0,0.5); /* Inner shadow for depth */
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.controls button {
+    /* Making the buttons look like glossy jelly beans */
+    border: 1px solid #005f79;
+    border-radius: 50%; /* Makes them perfect circles */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    font-size: 10px;
+    
+    /* The shiny blue gradient */
+    background: linear-gradient(to bottom, #87e0fd 0%, #05abe0 100%);
+    box-shadow: inset 0px 1px 0px rgba(61, 61, 61, 0.6);
+}
+
+.controls button:hover {
+    background: linear-gradient(to bottom, #449aeb 0%, #1551db 100%);
+    box-shadow: 0px 0px 10px #26b4f7;
+}
