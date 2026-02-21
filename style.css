@@ -87,7 +87,7 @@ body{
     .about {
         /* Instead of Side-by-Side (row), make them stack (column) */
         flex-direction: column; 
-        
+        margin: 20px 20px 10px 20px;
         /* Add some padding so it doesn't hit the edges */
         padding: 20px;
         text-align: center; /* Center the text for mobile */
@@ -157,5 +157,6 @@ body{
     box-shadow: 0px 0px 10px #26b4f7;
 
 }
+
 
 
